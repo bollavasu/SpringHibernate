@@ -4,6 +4,13 @@
 <%@ page session="false" %>
 <html>
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXW4NH8');</script>
+<!-- End Google Tag Manager -->
 	<title>Person Page</title>
 	<style type="text/css">
 		.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
@@ -13,9 +20,14 @@
 	</style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXW4NH8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <h1>
 	Add a Person
 </h1>
+<a href="http://www.google.co.uk">Outbound Link</a>
 
 <c:url var="addAction" value="/person/add" ></c:url>
 
@@ -90,5 +102,9 @@
 	</c:forEach>
 	</table>
 </c:if>
+<form name="contactForm" action="">
+Comment : <input type="textarea" name="name">
+          <input type="submit" name="submit" value="Submit">
+</form>
 </body>
 </html>
