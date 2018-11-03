@@ -1,0 +1,6 @@
+---
+applications:
+- name: SpringMVCHibernate
+  instances: 1
+  host: SpringMVCHibernateNew
+  path: target/SpringMVCHibernate.war
